@@ -29,7 +29,7 @@ a {
     text-decoration: none;
     color: rgb(46, 43, 43);
     display: block;
-    padding: 16px 22px ;
+    padding: 4px 4px ;
 
 }
 
@@ -51,7 +51,6 @@ header nav ul {
     gap: 16px;
 }
 
-
 .logo__img{
     width: 60px;
     height: auto;
@@ -60,12 +59,19 @@ header nav ul {
 
 .menu__link {
     font-size: medium;
+    border: beige solid;
+}
+
+.menu__link:hover {
+    border: solid #2b2b2b;
+    transition: border 1s;
 }
 
 .menu{
     display: flex;
     justify-content: space-around;
 }
+
 /*main*/ 
 
 .contenedor{
