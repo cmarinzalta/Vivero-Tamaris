@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@1,700&family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header>     
+        <nav>
+            <picture class="logo">
+                <img src="./img/logo.png" class="logo__img"alt="Hojas intercaladas con el nombre del logo">
+            </picture>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="index.html">Inicio</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="nav/plantas.html">Plantas</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="nav/macetas.html">Macetas</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="nav/nosotros.html">Nosotros</a>
+                </li>
+            </ul>
+        </nav>       
+    </header>
+    <main>
+        <section class="formulario"> 
+            <form method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre">
+                <br>
+                <label for="nombre">Apellido</label>
+                <input type="text" name="apellido">
+                <br>
+                <label for="nombre">Fecha de Nacimiento</label>
+                <input type="date" name="fecha">
+                <br>
+                <label for="nombre">Correo Electronico</label>
+                <input type="email" name="email">
+                <br>
+                <button type="reset">Borrar todo</button>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
