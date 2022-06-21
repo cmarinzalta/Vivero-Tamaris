@@ -28,9 +28,8 @@ ul {
 a {
     text-decoration: none;
     color: rgb(46, 43, 43);
-    display: block;
+    display: inline-block;
     padding: 4px 4px ;
-
 }
 
 img {
@@ -59,18 +58,19 @@ header nav ul {
 
 .menu__link {
     font-size: medium;
-    border: beige solid;
+    border: beige solid 1px;
 }
 
 .menu__link:hover {
-    border: solid #2b2b2b;
-    transition: border 1s;
+    border: solid #4d4b4b 1px;
+    transition: border 0.5s;
 }
 
 .menu{
     display: flex;
     justify-content: space-around;
 }
+
 
 /*main*/ 
 
@@ -96,8 +96,10 @@ header nav ul {
     margin-top: 10px;
 }
 
-
-/* Productos, contacto y macetas */
+.carousel-caption{
+    font-size: 30px;
+}
+/* productos */
 
 .galeria__producto {
     width: 300px;
@@ -107,18 +109,13 @@ header nav ul {
     text-align: center;
     padding: 10px;
     margin: 10px;
-    display: inline-block;
-}
-
-.contacto_img{
-    width: 400px;
-    margin: 30px;
+    display:inline-block;
 }
 
 .titulo-seccion {
     font-family: 'Nanum Myeongjo', serif;
     font-size: 40px;
-    text-align: right;
+    text-align: center;
     margin: 20px;
 }
 
@@ -131,6 +128,18 @@ header nav ul {
   display: inline-block;
   
 }
+
+
+/* contacto */
+
+.contacto_img{
+    width: 400px;
+    margin: 30px;
+}
+
+
+/* formulario */
+
 form {
     display: flex;
     flex-direction: column;
@@ -141,6 +150,8 @@ form {
     font-family: 'Nanum Myeongjo', serif;
     font-size: medium;
 }
+
+/* footer */
 
 footer{
     text-align: center;
