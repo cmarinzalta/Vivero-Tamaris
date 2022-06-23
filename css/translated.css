@@ -1,0 +1,70 @@
+/*misc*/
+/* normalize*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: khaki;
+  font-family: 'Nanum Myeongjo', serif; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: #2e2b2b;
+  display: inline-block;
+  padding: 4px 4px; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+/*partials*/
+/* header */
+header {
+  background-color: beige;
+  text-align: center;
+  padding: 15px; }
+  header nav {
+    display: flex;
+    justify-content: space-between; }
+    header nav picture img .logo__img {
+      width: 60px;
+      height: auto;
+      margin-left: 60px; }
+    header nav ul {
+      margin-right: 30px;
+      align-items: center;
+      gap: 16px; }
+      header nav ul .menu {
+        display: flex;
+        justify-content: space-around; }
+        header nav ul .menu__link {
+          font-size: medium;
+          border: beige solid 1px; }
+          header nav ul .menu__link:hover {
+            border: solid #4d4b4b 1px;
+            transition: border 0.5s; }
+
+/* footer */
+footer {
+  text-align: center;
+  font-family: 'Nanum Myeongjo', serif;
+  background-color: beige; }
+
+/*views*/
+/* formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.fomulario-suscripcion {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: medium; }

@@ -1,0 +1,43 @@
+/* header */
+
+header {
+    background-color: beige;
+    text-align: center;
+    padding: 15px;
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+
+        picture img {
+            .logo__img{
+                width: 60px;
+                height: auto;
+                margin-left: 60px;
+            }
+        }
+
+        ul {
+            margin-right: 30px;
+            align-items: center;
+            gap: 16px;
+
+            .menu{
+                display: flex;
+                justify-content: space-around;
+
+                &__link {
+                    font-size: medium;
+                    border: beige solid 1px;
+                    
+                    &:hover {
+                        border: solid #4d4b4b 1px;
+                        transition: border 0.5s;
+                    }
+                    
+                }
+            }
+                
+        }
+    }
+}
