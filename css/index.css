@@ -9,11 +9,7 @@ html {
     font-size: 62.5%;
 }
 
-header {
-    background-color: beige;
-    text-align: center;
-    padding: 15px;
-}
+
 
 body {
     background-color: khaki;
@@ -38,6 +34,12 @@ img {
 }
 
 /* header */
+
+header {
+    background-color: beige;
+    text-align: center;
+    padding: 15px;
+}
 
 nav{
     display: flex;
