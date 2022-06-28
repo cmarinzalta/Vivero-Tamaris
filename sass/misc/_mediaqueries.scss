@@ -1,0 +1,9 @@
+/*media queries*/
+
+/*nav*/
+
+@media screen and (max-width: 480px){
+    nav{
+        flex-direction: column;
+    }
+}

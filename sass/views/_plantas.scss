@@ -1,0 +1,60 @@
+/*PLANTAS y MACETAS*/
+.galeria {
+    display: flex;
+    width: 98%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.galeria > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: $spacing-medium;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows:1fr 1fr; 
+    grid-gap: $spacing-small;
+    grid-template-columns: repeat(auto-fit, minmax(150px,300px));
+    justify-content: center;
+}
+
+.galeria__producto {
+    width: 300px;
+    height: 350px;
+    border: 1px solid $alternative;
+    border-radius: 3px;
+    text-align: center;
+    padding: $spacing-small;
+    margin: $spacing-small;
+    display:inline-block;
+}
+
+.galeria__producto__texto {
+    font-family: $font-principal;
+    font-size: $text-small;
+    padding-bottom: $spacing-small;
+}
+
+.galeria__producto__imagen{
+    padding-bottom: $spacing-small;
+}
+
+.titulo-productos {
+    font-family: $font-principal;
+    font-size: $text-large;
+    text-align: center;
+    margin: $spacing-medium;
+}
+
+.subtitulo-productos {
+    display: flex;
+    justify-content: space-around;
+    font-family: $font-principal;
+    font-weight: 600;
+    font-size: $text-small;
+    padding: $spacing-medium;    
+}
