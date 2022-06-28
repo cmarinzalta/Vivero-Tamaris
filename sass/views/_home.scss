@@ -1,0 +1,26 @@
+/* inicio */
+
+.inicio{
+    max-width: 750px;
+    margin:auto ;
+    height: 80vh;
+}
+
+.inicio__titulo {
+    font-family: $font-principal;
+    font-size: $text-large;
+    display: flex;
+    justify-content: center;
+    margin-top: $spacing-small;
+}
+
+.carrusel-de-inicio{
+    margin-top: $spacing-medium;
+    margin-bottom: $spacing-medium;
+    width: 750px;
+    height: auto;
+}
+
+.carousel-caption{
+    font-size: $text-medium;
+}

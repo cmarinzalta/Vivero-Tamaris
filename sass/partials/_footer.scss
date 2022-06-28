@@ -1,6 +1,8 @@
 /* footer */
+
 footer{
     text-align: center;
-    font-family: 'Nanum Myeongjo', serif; 
-    background-color: beige;   
+    font-family: $font-principal; 
+    background-color: $secondary; 
+    font-size: $text-xsmall;  
 }

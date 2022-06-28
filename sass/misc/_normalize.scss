@@ -9,11 +9,9 @@ html {
     font-size: 62.5%;
 }
 
-
-
 body {
-    background-color: khaki;
-    font-family: 'Nanum Myeongjo', serif;
+    background-color: $primary;
+    font-family: $font-principal ;
     
 }
 
@@ -23,7 +21,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: rgb(46, 43, 43);
+    color: $text-color;
     display: inline-block;
     padding: 4px 4px ;
 }

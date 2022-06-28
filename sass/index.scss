@@ -9,5 +9,10 @@
 
 /*views*/
 @import './views/home' ;
+@import './views/macetas';
+@import './views/plantas';
 @import './views/contacto' ;
 @import './views/nosotros' ;
+
+/*media queries*/
+@import './misc/mediaqueries' ;

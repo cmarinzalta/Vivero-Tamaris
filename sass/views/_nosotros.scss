@@ -1,0 +1,55 @@
+
+/*NOSOTROS*/
+.contacto {
+    display: flex;
+    height: 80vh;
+
+}
+
+.contacto__img {
+    display: flex;
+    align-items: center;
+    padding: $spacing-medium;
+}
+
+.contacto__img img {
+    width: 500px;
+    
+}
+
+.contacto__resumen {
+    display: flex;
+    font-family: $font-principal;
+    font-size: $text-small; 
+    padding: $spacing-medium; 
+    text-align: center;
+    align-items: center;
+}
+
+.contacto-seccion {
+    display: block;
+}
+
+.contacto-seccion__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $spacing-medium;   
+}
+
+.contacto-seccion__info__titulo {
+    font-size: $text-small;
+
+}
+
+.contacto-seccion__info__redes{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    font-size: $text-xsmall;
+}
+
+.contacto-seccion__info__redes__iconos{
+    display: flex;
+    align-items: center;
+}
