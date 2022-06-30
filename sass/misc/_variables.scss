@@ -17,3 +17,15 @@ $font-principal:'Nanum Myeongjo', serif ;
  $text-medium: 3em;
  $text-small: 2em;
  $text-xsmall: 1.5em;
+
+ /*maps*/
+ $bordes: solid 1px; 
+ $fondo: blue;
+
+ $nav-style: (
+    bordes: $bordes,
+    fondo: $fondo,
+ )
+
+ 
+ 

@@ -43,9 +43,7 @@
 }
 
 .contacto-seccion__info__redes{
-    display: flex;
-    flex-direction:column ;
-    align-items: center;
+      @extend .contacto-seccion__info ;
     font-size: $text-xsmall;
 }
 

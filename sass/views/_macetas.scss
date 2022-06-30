@@ -23,8 +23,7 @@
 }
 
 .galeria__producto {
-    width: 300px;
-    height: 350px;
+    @include cuadros (300px, 350px);
     border: 1px solid #2b2b2b;
     border-radius: 3px;
     text-align: center;
@@ -32,6 +31,7 @@
     margin: $spacing-small;
     display:inline-block;
 }
+
 
 .galeria__producto__texto {
     font-family: $font-principal;

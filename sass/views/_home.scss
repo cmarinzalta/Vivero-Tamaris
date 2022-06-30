@@ -4,14 +4,14 @@
     max-width: 750px;
     margin:auto ;
     height: 80vh;
-}
 
-.inicio__titulo {
-    font-family: $font-principal;
-    font-size: $text-large;
-    display: flex;
-    justify-content: center;
-    margin-top: $spacing-small;
+    &__titulo {
+        font-family: $font-principal;
+        font-size: $text-large;
+        display: flex;
+        justify-content: center;
+        margin-top: $spacing-small;
+    }
 }
 
 .carrusel-de-inicio{

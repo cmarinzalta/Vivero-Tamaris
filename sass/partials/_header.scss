@@ -3,17 +3,17 @@ header {
     background-color: $secondary;
     text-align: center;
     padding: 15px;
-}
 
-nav{
-    display: flex;
-    justify-content: space-between;
- 
-}
-header nav ul {
-    margin-right: 30px;
-    align-items: center;
-    gap: 16px;
+    nav{
+        display: flex;
+        justify-content: space-between;
+     
+        ul {
+            margin-right: 30px;
+            align-items: center;
+            gap: 16px;
+        }
+    }
 }
 
 .logo__img{
@@ -22,17 +22,17 @@ header nav ul {
     margin-left: 60px;
 }
 
-.menu__link {
-    font-size: $text-small;
-    border: $secondary solid 1px;
-}
-
-.menu__link:hover {
-    border: solid $alternative 1px;
-    transition: border 0.5s;
-}
-
 .menu{
     display: flex;
     justify-content: space-around;
+
+    &__link {
+        border: map-get($nav-style , bordes );
+        font-size: $text-small;
+        
+        &:hover {
+            border: solid $alternative 1px;
+            transition: border 0.5s;
+        }
+     }
 }
