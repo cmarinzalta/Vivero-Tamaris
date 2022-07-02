@@ -51,16 +51,19 @@
         align-items: center;
         justify-content: flex-end;
     }
+}
 
 @media screen and (max-width: 830px){
         .contacto__resumen{
             font-size: $text-xsmall;
         }
+        .contacto-seccion{
+            font-size: $text-xsmall/2;
+        }
 }
  
 @media screen and (max-width: 480px){
-        .cotacto__img img{
-            width: 244px;            
-        }
+    .contacto__img img {
+        width: 244px;
     }
 }

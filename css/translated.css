@@ -203,7 +203,9 @@ form {
 
 .fomulario-suscripcion {
   font-family: "Nanum Myeongjo", serif;
-  font-size: medium; }
+  font-size: 2em;
+  display: flex;
+  flex-direction: column; }
 
 /*NOSOTROS*/
 .contacto {
@@ -285,10 +287,12 @@ form {
     align-items: center;
     justify-content: flex-end; } }
 
-@media screen and (max-width: 920px) and (max-width: 830px) {
+@media screen and (max-width: 830px) {
   .contacto__resumen {
-    font-size: 1.5em; } }
+    font-size: 1.5em; }
+  .contacto-seccion {
+    font-size: 0.75em; } }
 
-@media screen and (max-width: 920px) and (max-width: 480px) {
-  .cotacto__img img {
+@media screen and (max-width: 480px) {
+  .contacto__img img {
     width: 244px; } }

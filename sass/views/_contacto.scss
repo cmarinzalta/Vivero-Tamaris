@@ -8,5 +8,7 @@ form {
 
 .fomulario-suscripcion{
     font-family: $font-principal;
-    font-size: medium;
+    font-size: $text-small;
+    display: flex;
+    flex-direction: column;
 }
