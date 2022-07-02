@@ -117,7 +117,7 @@ footer {
   border-radius: 3px;
   text-align: center;
   padding: 1rem;
-  margin: 1rem;
+  margin: 0 auto;
   display: inline-block; }
 
 .galeria__producto__texto {
@@ -170,7 +170,7 @@ footer {
   border-radius: 3px;
   text-align: center;
   padding: 1rem;
-  margin: 1rem;
+  margin: 0 auto;
   display: inline-block; }
 
 .galeria__producto__texto {
@@ -216,7 +216,7 @@ form {
   padding: 2rem; }
 
 .contacto__img img {
-  width: 500px; }
+  width: 381px; }
 
 .contacto__resumen {
   display: flex;
@@ -246,8 +246,49 @@ form {
   align-items: center; }
 
 /*media queries*/
-/*media queries*/
 /*nav*/
-@media screen and (max-width: 480px) {
-  nav {
-    flex-direction: column; } }
+@media screen and (max-width: 560px) {
+  header nav {
+    flex-direction: column; }
+  .logo__img {
+    margin-left: 0;
+    margin-bottom: 0.5rem; }
+  .menu {
+    margin-right: 0;
+    gap: 1rem; }
+  .menu__link {
+    border: none;
+    text-decoration: underline;
+    font-size: 2em; } }
+
+@media screen and (max-width: 500px) {
+  .inicio__titulo {
+    font-size: 3em; } }
+
+@media screen and (max-width: 380px) {
+  .menu__link {
+    font-size: 1.5em; }
+  nav ul {
+    gap: 1rem; } }
+
+/*carrusel inicio*/
+@media screen and (max-width: 760px) {
+  .carrusel-de-inicio {
+    flex-direction: column;
+    width: 100%; } }
+
+/*nosotros*/
+@media screen and (max-width: 920px) {
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; } }
+
+@media screen and (max-width: 920px) and (max-width: 830px) {
+  .contacto__resumen {
+    font-size: 1.5em; } }
+
+@media screen and (max-width: 920px) and (max-width: 480px) {
+  .cotacto__img img {
+    width: 244px; } }

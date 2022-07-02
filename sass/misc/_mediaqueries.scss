@@ -1,9 +1,66 @@
-/*media queries*/
-
 /*nav*/
+ @media screen and (max-width: 560px){
+    header nav {
+           flex-direction: column;
+    }
+    .logo__img {
+        margin-left: 0;
+        margin-bottom: 0.5rem;
+    }
+    .menu{
+        margin-right: 0;
+        gap: $spacing-small;
+    }
+    .menu__link{
+        border: none;
+        text-decoration: underline;
+        font-size: $text-small ;
+    }
+ }
+ 
+ @media screen and (max-width: 500px){
+    .inicio__titulo{
+        font-size: $text-medium;
+    }
+ }
 
-@media screen and (max-width: 480px){
-    nav{
+ @media screen and (max-width: 380px){
+    .menu__link{
+        font-size: $text-xsmall ;
+    }
+    nav ul {
+        gap: 1rem;
+    }
+}
+
+/*carrusel inicio*/
+
+@media screen and (max-width: 760px){
+    .carrusel-de-inicio {
         flex-direction: column;
+        width: 100%;
+    }
+}
+
+/*nosotros*/
+
+@media screen and (max-width: 920px){
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+@media screen and (max-width: 830px){
+        .contacto__resumen{
+            font-size: $text-xsmall;
+        }
+}
+ 
+@media screen and (max-width: 480px){
+        .cotacto__img img{
+            width: 244px;            
+        }
     }
 }
