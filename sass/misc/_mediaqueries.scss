@@ -31,7 +31,7 @@
     nav ul {
         gap: 1rem;
     }
-}
+ }
 
 /*carrusel inicio*/
 
@@ -65,5 +65,22 @@
 @media screen and (max-width: 480px){
     .contacto__img img {
         width: 244px;
+    }
+}
+
+/*formulario*/
+
+@media screen and (max-width: 856px){
+    .form-label {
+       font-size: $text-xsmall/2;
+    }
+    .form-check-label {
+        font-size: $text-xsmall/2;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .form-check-label {
+        font-size: $text-xsmall/3;
     }
 }

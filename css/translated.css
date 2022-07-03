@@ -66,13 +66,15 @@ footer {
   font-family: "Nanum Myeongjo", serif;
   background-color: #f5f5dc;
   font-size: 1.5em; }
+  footer p {
+    margin-bottom: 0%; }
 
 /*views*/
 /* inicio */
 .inicio {
   max-width: 750px;
   margin: auto;
-  height: 80vh; }
+  height: 100vh; }
   .inicio__titulo {
     font-family: "Nanum Myeongjo", serif;
     font-size: 5em;
@@ -296,3 +298,14 @@ form {
 @media screen and (max-width: 480px) {
   .contacto__img img {
     width: 244px; } }
+
+/*formulario*/
+@media screen and (max-width: 856px) {
+  .form-label {
+    font-size: 0.75em; }
+  .form-check-label {
+    font-size: 0.75em; } }
+
+@media screen and (max-width: 450px) {
+  .form-check-label {
+    font-size: 0.5em; } }
