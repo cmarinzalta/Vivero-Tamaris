@@ -3,8 +3,10 @@
 footer{
     text-align: center;
     font-family: $font-principal; 
-    background-color: $secondary; 
+    background-color: $primary; 
     font-size: $text-xsmall;  
+    height: $spacing-large;
+    box-shadow: 10px 3px 13px 4px #f0e15e, 0px 0px 21px 1px rgba(0,0,0,0);
 
     p {
         margin-bottom: 0%;

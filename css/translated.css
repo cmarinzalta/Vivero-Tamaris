@@ -15,7 +15,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #f0e68c;
+  background-image: url(../../img/fondo.jpg);
   font-family: "Nanum Myeongjo", serif; }
 
 ul {
@@ -31,10 +31,23 @@ img {
   width: 100%;
   height: auto; }
 
+/*scroll bar*/
+::-webkit-scrollbar {
+  width: 10px; }
+
+::-webkit-scrollbar-track {
+  background-color: #f4fcb0;
+  border-radius: 50px; }
+
+::-webkit-scrollbar-thumb {
+  background: rgba(247, 138, 13, 0.493);
+  border-radius: 50px; }
+
 /*partials*/
 /* header */
 header {
-  background-color: #f5f5dc;
+  box-shadow: 0px 10px 13px -7px #f0e15e, 0px 0px 21px 1px rgba(0, 0, 0, 0);
+  background-color: #f4fcb0;
   text-align: center;
   padding: 15px; }
   header nav {
@@ -54,18 +67,26 @@ header {
   display: flex;
   justify-content: space-around; }
   .menu__link {
-    border: solid 1px;
-    font-size: 2em; }
+    color: #2e2b2b;
+    font-size: 2em;
+    padding: 5px 30px;
+    border: 0.5px solid #f4fcb0;
+    border-radius: 3rem; }
     .menu__link:hover {
-      border: solid #2b2b2b 1px;
-      transition: border 0.5s; }
+      animation: pulsate 0.5s ease-in-out; }
+
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 25px #b9e71373,  0 0 50px #def12fb4; } }
 
 /* footer */
 footer {
   text-align: center;
   font-family: "Nanum Myeongjo", serif;
-  background-color: #f5f5dc;
-  font-size: 1.5em; }
+  background-color: #f4fcb0;
+  font-size: 1.5em;
+  height: 3rem;
+  box-shadow: 10px 3px 13px 4px #f0e15e, 0px 0px 21px 1px rgba(0, 0, 0, 0); }
   footer p {
     margin-bottom: 0%; }
 
@@ -80,13 +101,15 @@ footer {
     font-size: 5em;
     display: flex;
     justify-content: center;
-    margin-top: 1rem; }
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
 
 .carrusel-de-inicio {
   margin-top: 2rem;
   margin-bottom: 2rem;
   width: 750px;
-  height: auto; }
+  height: auto;
+  box-shadow: inset 30px 15px 15px 15px #646361b7, 1px 1px 20px 6px #979292a4, -20px -7px 30px 15px rgba(247, 244, 242, 0); }
 
 .carousel-caption {
   font-size: 3em; }
@@ -96,7 +119,8 @@ footer {
   display: flex;
   width: 98%;
   max-width: 1000px;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 3rem; }
 
 .galeria > div {
   display: flex;
@@ -134,7 +158,8 @@ footer {
   font-family: "Nanum Myeongjo", serif;
   font-size: 5em;
   text-align: center;
-  margin: 2rem; }
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
 
 .subtitulo-productos {
   display: flex;
@@ -149,7 +174,8 @@ footer {
   display: flex;
   width: 98%;
   max-width: 1000px;
-  margin: auto; }
+  margin: auto;
+  margin-bottom: 3rem; }
 
 .galeria > div {
   display: flex;
@@ -187,7 +213,8 @@ footer {
   font-family: "Nanum Myeongjo", serif;
   font-size: 5em;
   text-align: center;
-  margin: 2rem; }
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
 
 .subtitulo-productos {
   display: flex;
@@ -251,7 +278,7 @@ form {
 
 /*media queries*/
 /*nav*/
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 760px) {
   header nav {
     flex-direction: column; }
   .logo__img {
@@ -262,8 +289,9 @@ form {
     gap: 1rem; }
   .menu__link {
     border: none;
-    text-decoration: underline;
-    font-size: 2em; } }
+    font-size: 2em;
+    margin: 0;
+    padding: 0; } }
 
 @media screen and (max-width: 500px) {
   .inicio__titulo {

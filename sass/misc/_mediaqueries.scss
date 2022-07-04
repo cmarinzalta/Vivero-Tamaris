@@ -1,5 +1,5 @@
 /*nav*/
- @media screen and (max-width: 560px){
+ @media screen and (max-width: 760px){
     header nav {
            flex-direction: column;
     }
@@ -12,9 +12,11 @@
         gap: $spacing-small;
     }
     .menu__link{
+        
         border: none;
-        text-decoration: underline;
         font-size: $text-small ;
+        margin: 0;
+        padding: 0;
     }
  }
  

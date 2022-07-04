@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-color: $primary;
+    background-image: url(../../img/fondo.jpg);
     font-family: $font-principal ;
     
 }
@@ -29,4 +29,17 @@ a {
 img {
     width: 100%;
     height: auto;
+}
+
+/*scroll bar*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: $primary;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb{
+    background: rgba(247, 138, 13, 0.493);
+    border-radius: 50px;
 }

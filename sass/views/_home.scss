@@ -10,7 +10,8 @@
         font-size: $text-large;
         display: flex;
         justify-content: center;
-        margin-top: $spacing-small;
+        margin-top: $spacing-large;
+        margin-bottom: $spacing-large;
     }
 }
 
@@ -19,6 +20,7 @@
     margin-bottom: $spacing-medium;
     width: 750px;
     height: auto;
+    box-shadow: inset 30px 15px 15px 15px #646361b7, 1px 1px 20px 6px #979292a4, -20px -7px 30px 15px rgba(247, 244, 242, 0);
 }
 
 .carousel-caption{
