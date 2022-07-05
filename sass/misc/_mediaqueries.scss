@@ -21,6 +21,9 @@
  }
  
  @media screen and (max-width: 500px){
+    .inicio{
+        height: 70vh;
+    }
     .inicio__titulo{
         font-size: $text-medium;
     }
@@ -71,6 +74,11 @@
 }
 
 /*formulario*/
+@media screen and (max-width: 1075px) {
+    .formulario{
+        margin-top: $spacing-large;        
+}
+}
 
 @media screen and (max-width: 856px){
     .form-label {
@@ -86,3 +94,4 @@
         font-size: $text-xsmall/3;
     }
 }
+

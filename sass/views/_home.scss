@@ -3,16 +3,17 @@
 .inicio{
     max-width: 750px;
     margin:auto ;
-    height: 100vh;
 
     &__titulo {
         font-family: $font-principal;
         font-size: $text-large;
+        color: $text-color;
         display: flex;
         justify-content: center;
         margin-top: $spacing-large;
         margin-bottom: $spacing-large;
     }
+
 }
 
 .carrusel-de-inicio{

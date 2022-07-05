@@ -5,10 +5,12 @@ form {
     flex-direction: column;
     align-items: center;
 }
+.formulario{
+    flex-direction: column;
+    margin-top: $spacing-large*3;
+}
 
 .fomulario-suscripcion{
     font-family: $font-principal;
     font-size: $text-small;
-    display: flex;
-    flex-direction: column;
 }
