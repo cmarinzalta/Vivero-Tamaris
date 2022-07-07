@@ -12,6 +12,10 @@ html {
 body {
     background-image: url(../img/fondo.jpg);
     font-family: $font-principal ;
+    display: grid;
+    grid-auto-rows: auto 1fr auto;
+    align-items: flex-end;
+    min-height: 100vh;
     
 }
 

@@ -38,14 +38,6 @@
     }
  }
 
-/*carrusel inicio*/
-
-@media screen and (max-width: 760px){
-    .carrusel-de-inicio {
-        flex-direction: column;
-        width: 100%;
-    }
-}
 
 /*nosotros*/
 
@@ -67,11 +59,6 @@
         }
 }
  
-@media screen and (max-width: 480px){
-    .contacto__img img {
-        width: 244px;
-    }
-}
 
 /*formulario*/
 @media screen and (max-width: 1075px) {

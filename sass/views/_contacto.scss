@@ -1,13 +1,8 @@
 /* formulario */
 
 form {
-    display: flex;
     flex-direction: column;
     align-items: center;
-}
-.formulario{
-    flex-direction: column;
-    margin-top: $spacing-large*3;
 }
 
 .fomulario-suscripcion{

@@ -3,8 +3,9 @@
 /*colores*/
 /*espacios*/
 /*familia de fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Autour+One&display=swap");
 /*tamaños de fuentes*/
-/*maps*/
 /* normalize*/
 * {
   margin: 0;
@@ -16,7 +17,11 @@ html {
 
 body {
   background-image: url(../img/fondo.jpg);
-  font-family: "Nanum Myeongjo", serif; }
+  font-family: "Yeseva One", cursive;
+  display: grid;
+  grid-auto-rows: auto 1fr auto;
+  align-items: flex-end;
+  min-height: 100vh; }
 
 ul {
   list-style-type: none; }
@@ -56,7 +61,6 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
   text-decoration: none; }
 
 /*partials*/
-/* header */
 header {
   box-shadow: 0px 10px 13px -7px #f0e15e, 0px 0px 21px 1px rgba(0, 0, 0, 0);
   background-color: #f5fcb0;
@@ -79,7 +83,7 @@ header {
   display: flex;
   justify-content: space-around; }
   .menu__link {
-    color: #2e2b2b;
+    color: #8b7733c9;
     font-size: 2em;
     padding: 5px 30px;
     border: 0.5px solid #f5fcb0;
@@ -94,7 +98,7 @@ header {
 /* footer */
 footer {
   text-align: center;
-  font-family: "Nanum Myeongjo", serif;
+  font-family: "Yeseva One", cursive;
   background-color: #f5fcb0;
   font-size: 1.5em;
   height: 3rem;
@@ -103,12 +107,11 @@ footer {
     margin-bottom: 0%; }
 
 /*views*/
-/* inicio */
 .inicio {
   max-width: 750px;
   margin: auto; }
   .inicio__titulo {
-    font-family: "Nanum Myeongjo", serif;
+    font-family: "Yeseva One", cursive;
     font-size: 5em;
     color: #2e2b2b;
     display: flex;
@@ -119,162 +122,80 @@ footer {
 .carrusel-de-inicio {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  width: 750px;
-  height: auto;
   box-shadow: inset 30px 15px 15px 15px #646361b7, 1px 1px 20px 6px #979292a4, -20px -7px 30px 15px rgba(247, 244, 242, 0); }
 
-.carousel-caption {
-  font-size: 3em; }
-
-/*PLANTAS y MACETAS*/
-.galeria {
-  display: flex;
-  width: 98%;
-  max-width: 1000px;
-  margin: auto;
-  margin-bottom: 3rem; }
-
-.galeria > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2rem; }
-
-.galeria {
+.galeria-p, .galeria-m {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
-  justify-content: center; }
+  justify-content: center;
+  max-width: 1000px;
+  margin: auto; }
 
-.galeria__producto {
+.galeria__producto-p, .galeria__producto-m {
   width: 300px;
   height: 350px;
-  border: 2px solid #5f4b07c9;
-  border-radius: 3px;
   text-align: center;
-  padding: 1rem;
-  margin: 0 auto;
-  display: inline-block; }
+  padding: 2rem;
+  margin: 0 auto; }
 
-.galeria__producto__texto {
-  font-family: "Nanum Myeongjo", serif;
+.galeria__producto__texto-p, .galeria__producto__texto-m {
+  font-family: "Autour One", cursive;
   font-size: 2em;
   padding-bottom: 1rem; }
 
-.galeria__producto__imagen {
+.galeria__producto__imagen-p, .galeria__producto__imagen-m {
   padding-bottom: 1rem;
   border-radius: 5px;
   transition: 1s; }
-  .galeria__producto__imagen:hover {
+  .galeria__producto__imagen-p:hover, .galeria__producto__imagen-m:hover {
     transform: scale(1.1); }
 
-.titulo-productos {
-  font-family: "Nanum Myeongjo", serif;
+.titulo-productos-p, .titulo-productos-m {
+  font-family: "Autour One", cursive;
   font-size: 5em;
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 3rem; }
 
-.subtitulo-productos {
+.subtitulo-productos-p, .subtitulo-productos-m {
   display: flex;
   justify-content: space-around;
-  font-family: "Nanum Myeongjo", serif;
-  font-weight: 600;
-  font-size: 2em;
-  padding: 2rem; }
-
-/*PLANTAS y MACETAS*/
-.galeria {
-  display: flex;
-  width: 98%;
-  max-width: 1000px;
-  margin: auto;
-  margin-bottom: 3rem; }
-
-.galeria > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2rem; }
-
-.galeria {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
-  justify-content: center; }
-
-.galeria__producto {
-  width: 300px;
-  height: 350px;
-  border: 2px solid #5f4b07c9;
-  border-radius: 3px;
-  text-align: center;
-  padding: 1rem;
-  margin: 0 auto;
-  display: inline-block; }
-
-.galeria__producto__texto {
-  font-family: "Nanum Myeongjo", serif;
-  font-size: 2em;
-  padding-bottom: 1rem; }
-
-.galeria__producto__imagen {
-  padding-bottom: 1rem;
-  border-radius: 5px; }
-
-.titulo-productos {
-  font-family: "Nanum Myeongjo", serif;
-  font-size: 5em;
-  text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 3rem; }
-
-.subtitulo-productos {
-  display: flex;
-  justify-content: space-around;
-  font-family: "Nanum Myeongjo", serif;
+  font-family: "Autour One", cursive;
   font-weight: 600;
   font-size: 2em;
   padding: 2rem; }
 
 /* formulario */
 form {
-  display: flex;
   flex-direction: column;
   align-items: center; }
 
-.formulario {
-  flex-direction: column;
-  margin-top: 9rem; }
-
 .fomulario-suscripcion {
-  font-family: "Nanum Myeongjo", serif;
+  font-family: "Yeseva One", cursive;
   font-size: 2em; }
 
 /*NOSOTROS*/
 .contacto {
   display: flex;
-  height: 80vh; }
+  margin-top: 2rem; }
 
 .contacto__img {
   display: flex;
   align-items: center;
-  padding: 2rem; }
-
-.contacto__img img {
-  width: 381px; }
+  padding: 2rem;
+  flex-grow: 1;
+  flex-basis: 50%; }
 
 .contacto__resumen {
   display: flex;
-  font-family: "Nanum Myeongjo", serif;
+  font-family: "Autour One", cursive;
   font-size: 2em;
   padding: 2rem;
   text-align: center;
-  align-items: center; }
+  align-items: center;
+  flex-grow: 1;
+  flex-basis: 50%; }
 
 .contacto-seccion {
   display: block; }
@@ -324,12 +245,6 @@ form {
   nav ul {
     gap: 1rem; } }
 
-/*carrusel inicio*/
-@media screen and (max-width: 760px) {
-  .carrusel-de-inicio {
-    flex-direction: column;
-    width: 100%; } }
-
 /*nosotros*/
 @media screen and (max-width: 920px) {
   .contacto {
@@ -343,10 +258,6 @@ form {
     font-size: 1.5em; }
   .contacto-seccion {
     font-size: 0.75em; } }
-
-@media screen and (max-width: 480px) {
-  .contacto__img img {
-    width: 244px; } }
 
 /*formulario*/
 @media screen and (max-width: 1075px) {

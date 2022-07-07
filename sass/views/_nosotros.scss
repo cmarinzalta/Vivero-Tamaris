@@ -2,28 +2,28 @@
 /*NOSOTROS*/
 .contacto {
     display: flex;
-    height: 80vh;
-
+    margin-top: $spacing-medium;
 }
 
 .contacto__img {
     display: flex;
     align-items: center;
     padding: $spacing-medium;
+    flex-grow: 1;
+    flex-basis: 50%;
 }
 
-.contacto__img img {
-    width: 381px;
-    
-}
 
 .contacto__resumen {
     display: flex;
-    font-family: $font-principal;
+    font-family: $font-secondary;
     font-size: $text-small; 
     padding: $spacing-medium; 
     text-align: center;
     align-items: center;
+    flex-grow: 1;
+    flex-basis: 50%;
+
 }
 
 .contacto-seccion {
