@@ -11,8 +11,12 @@
     padding: $spacing-medium;
     flex-grow: 1;
     flex-basis: 50%;
-}
 
+    & img {
+        border-radius: 6px;
+    }
+}
+ 
 
 .contacto__resumen {
     display: flex;

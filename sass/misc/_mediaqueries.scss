@@ -20,6 +20,12 @@
     }
  }
  
+ @media screen and (max-width: 720px){
+    .inicio__titulo { 
+        font-size: 5em ;
+ }
+}
+
  @media screen and (max-width: 500px){
     .inicio{
         height: 70vh;
